@@ -4,7 +4,7 @@ const removeFromArray = function(arr, ...delNum) {
     //     filteredArray = filteredArray.filter((num) => num !== args);
     // }
     // return filteredArray;
-    return arr.filter((num) => !delNum.includes(num) );
+    return arr.filter(num => !delNum.includes(num) );
 };
 
 // Do not edit below this line
