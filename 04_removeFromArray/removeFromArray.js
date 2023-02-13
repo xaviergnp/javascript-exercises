@@ -1,5 +1,9 @@
 const removeFromArray = function(arr, delNum) {
-    return arr.filter((num) => num !== delNum);
+    let filteredArray = arr;
+    for (args of Array.from(arguments)) {
+        filteredArray = filteredArray.filter((num) => num !== args);
+    }
+    return filteredArray;
 };
 
 // Do not edit below this line
